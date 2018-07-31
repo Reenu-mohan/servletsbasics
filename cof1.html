@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Tue, 31 Jul 2018 05:57:55 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>cof1</title>
+    
+    <style type="text/css">
+    <!--
+    body {
+      color:#000000;
+      background-color:#FFFFFF;
+      background-image:url('Background Image');
+      background-repeat:no-repeat;
+    }
+    a  { color:#0000FF; }
+    a:visited { color:#800080; }
+    a:hover { color:#008000; }
+    a:active { color:#FF0000; }
+    -->
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+		<script>
+
+		function validateUser()
+		{
+		var x=document.getElementById("t1").value;
+		var y=document.getElementById("t2").value;
+		if(x==''&& y=='')
+		{
+			alert("your have to fill th mandatory fields");
+			return false;
+			}
+		else
+			{
+			alert("your are logining");
+			return true;
+			}
+
+		</script>
+  </head>
+  <body style="background-color:cyan">
+		<h1 style="color:red"><center>WELCOME</center></h1>
+		<hr/>
+		<p >
+		<center>
+			Hai all, welcome to this page
+		</center>
+		</p>
+		<form action="http://www.yahoo.com" onsubmit="return validateUser()">
+		<center>
+			Enter your name  <input type="text" id="t1" name="url">
+		<br/>
+		<br/>
+			Enter your password  <input type ="password" id="t2" name="p1">
+		<br/>
+		<br/>
+			enter your age <input type="number" min ="1" max="99">
+		<br/>
+		<br/>
+			enter your dob <input type="date">
+		<br/>
+		<br/>
+			<input type="submit" name="Login" value="login">
+			<input type="reset" name="Clear">
+		</center>
+		</form>
+  </body>
+</html>
